@@ -22,7 +22,7 @@ You can see a [demo here](https://share.note.sx/wa0uh9g2#nxCVOJ23MuGYIOS7LTyAX51
 
 1. Download `callout-extras.css` from this repo.
 2. Open Obsidian and go to `Settings > Appearance`.
-3. Scroll down to `Custom CSS` and click on `Open folder`.
+3. Scroll down to `CSS Snippets` and click on `Open snippets folder` button.
 4. Drop `callout-extras.css` into the folder.
 5. Back in Obsidian, click on `Reload snippets` button.
 6. Toggle the switch to enable the snippet.
