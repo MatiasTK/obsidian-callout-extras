@@ -7,9 +7,9 @@ _Extends Obsidian [Callout](https://help.obsidian.md/Editing+and+formatting/Call
 - Card with image and text
 - Card with title and text
 - Card with only text
-- Image aligned
 - Group of cards
-- Compatible with [Obsidian Style Plugin](https://github.com/mgmeyers/obsidian-style-settings)
+- Image aligned
+- Compatible with [Obsidian Style Settings Plugin](https://github.com/mgmeyers/obsidian-style-settings)
 
 > [!NOTE]
 > Alignment left and right can be only seen in _Reading Mode_
@@ -77,16 +77,16 @@ You can see a [demo here](https://share.note.sx/wa0uh9g2#nxCVOJ23MuGYIOS7LTyAX51
 > [!figure-img-left] ![alt-text](link)
 ```
 
-### Cards with title
+### Cards without title
 
-| Identifier        | Description                                       |
-| ----------------- | ------------------------------------------------- |
-| figure            | **centered card** with title and description      |
-| figure-note-right | **right aligned card** with title and description |
-| figure-note-right | **left aligned card** with title and description  |
+| Identifier        | Description                             |
+| ----------------- | --------------------------------------- |
+| figure-note       | **centered card** with description      |
+| figure-note-right | **right aligned card** with description |
+| figure-note-right | **left aligned card** with description  |
 
 ```markdown
-> [!figure]
+> [!figure-note]
 > Description
 
 > [!figure-note-right]
