@@ -1,0 +1,60 @@
+{
+    "displayName": "Figure",
+    "replacement": "figure",
+    "icon": "gallery-thumbnails",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure right",
+    "replacement": "figure-right",
+    "icon": "gallery-thumbnails",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure left",
+    "replacement": "figure-left",
+    "icon": "gallery-thumbnails",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure image",
+    "replacement": "figure-img",
+    "icon": "image",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure image right",
+    "replacement": "figure-img-right",
+    "icon": "image",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure image left",
+    "replacement": "figure-img-left",
+    "icon": "image",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure note",
+    "replacement": "figure-note",
+    "icon": "sticky-note",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure note right",
+    "replacement": "figure-note-right",
+    "icon": "sticky-note",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure note left",
+    "replacement": "figure-note-left",
+    "icon": "sticky-note",
+    "color": "#ffa500"
+},
+{
+    "displayName": "Figure group",
+    "replacement": "figure-group",
+    "icon": "layout-grid",
+    "color": "#ffa500"
+}
