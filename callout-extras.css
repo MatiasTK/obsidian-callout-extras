@@ -207,8 +207,8 @@ settings:
     format: em
   -
     id: credits
-    title: Credits
-    description: 'Author: @MatiasTK'
+    title: Author
+    description: '@MatiasTK'
     type: heading
 
 */
