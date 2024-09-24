@@ -116,7 +116,7 @@ You can see a [demo here](https://share.note.sx/wa0uh9g2#nxCVOJ23MuGYIOS7LTyAX51
 
 ## Extra 🎁
 
-This snippet is compatible with [obsidian-completr](https://github.com/tth05/obsidian-completr) plugin. You can use the following snippet in `.obsidian\plugins\obsidian-completr\callouts_suggestions.json` to autocomplete the callout:
+This snippet is compatible with [obsidian-completr](https://github.com/tth05/obsidian-completr) plugin. You can add the following snippet in `.obsidian\plugins\obsidian-completr\callouts_suggestions.json` to autocomplete the callout:
 
 ```json
 {
