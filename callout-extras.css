@@ -17,10 +17,6 @@ div .callout[data-callout='figure-group'] {
   background-color: var(--background-primary) !important;
 }
 
-.callout[data-callout^='figure-group'] .callout-icon {
-  display: none;
-}
-
 .callout[data-callout^='figure-group'] > .callout-title {
   display: none;
 }
@@ -98,7 +94,6 @@ div .callout[data-callout^='figure-left'] {
 
 div .callout[data-callout^='figure-note'] {
   width: 50%;
-  margin: var(--margin-y) auto;
 }
 
 .callout[data-callout^='figure-note'] .callout-title {
@@ -107,27 +102,16 @@ div .callout[data-callout^='figure-note'] {
 
 div .callout[data-callout^='figure-note-right'] {
   float: right;
-  width: 50%;
   margin: var(--margin-y) var(--margin-x);
-}
-
-.callout[data-callout^='figure-note-right'] .callout-title {
-  display: none;
 }
 
 div .callout[data-callout^='figure-note-left'] {
   float: left;
-  width: 50%;
   margin: var(--margin-y) var(--margin-x);
-}
-
-.callout[data-callout^='figure-note-right'] .callout-title {
-  display: none;
 }
 
 div .callout[data-callout^='figure-img'] {
   width: 50%;
-  margin: var(--margin-y) auto;
   background-color: transparent !important;
   border: none;
 }
@@ -138,26 +122,12 @@ div .callout[data-callout^='figure-img'] {
 
 div .callout[data-callout^='figure-img-right'] {
   float: right;
-  width: 50%;
-  background-color: transparent !important;
-  margin: var(--margin-y) var(--margin-x);
-  border: none;
+  margin: var(--margin-y) var(--margin-x) !important;
 }
 
-.callout[data-callout^='figure-img-right'] .callout-content {
-  display: none;
-}
-
-.callout[data-callout^='figure-img-left'] {
+div .callout[data-callout^='figure-img-left'] {
   float: left;
-  width: 50%;
-  background-color: transparent !important;
-  margin: var(--margin-y) var(--margin-x);
-  border: none;
-}
-
-.callout[data-callout^='figure-img-left'] .callout-content {
-  display: none;
+  margin: var(--margin-y) var(--margin-x) !important;
 }
 
 /* @settings
