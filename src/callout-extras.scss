@@ -1,0 +1,158 @@
+/*
+Author: @MatiasTK
+Repository: https://github.com/MatiasTK/obsidian-callout-extras
+*/
+
+
+body{
+    --margin-x: 1em;
+    --margin-y: 0.25em;
+    --callout-width: 50%;
+    --callout-background-color: var(--background-secondary);
+    --callout-border-color: var(--hr-color);
+}
+
+.el-div[data-callout^='figure'] .callout[data-callout^='figure'] {
+    padding: 0.5em;
+    margin: var(--margin-y) auto;
+    background-color: var(--callout-background-color);
+    border: 1px solid var(--callout-border-color);
+    width: var(--callout-width);
+
+    .callout-icon {
+        display: none;
+    }
+
+    .callout-title {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+
+        img {
+            width: 100%;
+            z-index: 1;
+            position: relative;
+        }
+    }
+
+    .callout-title-inner {
+        width: 100%;
+    }
+
+    .callout-content {
+        padding: 0;
+        box-shadow: none;
+        max-width: 100%;
+        background-color: var(--callout-background-color);
+    }
+}
+
+.el-div[data-callout^='figure']  .callout[data-callout$='-right'] {
+    float: right;
+    max-width: 50%;
+    margin: var(--margin-y) var(--margin-x);
+}
+
+.el-div[data-callout^='figure']  .callout[data-callout$='-left']{
+    float: left;
+    max-width: 50%;
+    margin: var(--margin-y) var(--margin-x);
+}
+
+.el-div[data-callout^='figure']  .callout[data-callout^='figure-img'] {
+    border: none;
+    background-color: transparent;
+
+    .callout-title {
+        background-color: transparent;
+    }
+
+    .callout-content {
+        display: none;
+    }
+}
+
+.callout[data-callout^='figure-note'] .callout-title {
+    display: none;
+}
+
+.el-div[data-callout^='figure']  .callout[data-callout^='figure-group'] {
+    width: 100%;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+
+    > .callout-title {
+        display: none;
+    }
+
+    > .callout-content {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: var(--media-grid-gap, 7px);
+        align-items: start;
+        background-color: var(--background-primary);
+
+        .callout {
+            width: 100%;
+        }
+    }
+}
+
+.callout-group-3-columns .el-div[data-callout^='figure'] .callout[data-callout^='figure-group'] .callout-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+/* @settings
+name: Callout Extras
+id: callout-extras
+settings:
+  -
+    id: callout-group-3-columns
+    title: Callout Group 3 Columns
+    description: Callout groups will display with max 3 columns
+    type: class-toggle
+    default: false
+  -
+    id: callout-background-color
+    title: Callout Background Color
+    description: Background color for the callouts
+    type: variable-color
+    format: hex
+    default: var(--background-secondary)
+  -
+    id: callout-border-color
+    title: Callout Border Color
+    description: Border color for the callouts
+    type: variable-color
+    format: hex
+    default: var(--hr-color)
+  -
+    id: margin-x
+    title: Horizontal Margin
+    description: Horizontal margin for the callouts
+    type: variable-number
+    default: 1
+    format: em
+  -
+    id: margin-y
+    title: Vertical Margin
+    description: Vertical margin for the callouts
+    type: variable-number
+    default: 0.25
+    format: em
+  -
+    id: callout-width
+    title: Callout Width
+    description: Width for the callouts
+    type: variable-number
+    default: 20
+    format: em
+  -
+    id: credits
+    title: Author
+    description: '@MatiasTK'
+    type: heading
+
+*/
