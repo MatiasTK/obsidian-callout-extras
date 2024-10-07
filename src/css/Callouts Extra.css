@@ -1,0 +1,184 @@
+/*
+Author: MatiasTK
+*/
+
+body {
+  --margin-x: 1em;
+  --margin-y: 0.25em;
+  --callout-width: 20em;
+  --callout-background-color: var(--background-secondary) !default;
+  --callout-border-color: var(--hr-color);
+}
+
+div .callout[data-callout='figure-group'] {
+  margin: 0;
+  width: 100%;
+  border: none;
+  background-color: var(--background-primary) !important;
+}
+
+.callout[data-callout^='figure-group'] > .callout-title {
+  display: none;
+}
+
+.callout[data-callout^='figure-group'] > .callout-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-gap: var(--media-grid-gap, 7px);
+  align-items: start;
+  margin: 0;
+  background-color: var(--background-primary) !important;
+}
+
+.callout-group-3-columns .callout[data-callout^='figure-group'] > .callout-content {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+div .callout[data-callout^='figure-group'] > .callout-content {
+  background-color: transparent !important;
+}
+
+.callout[data-callout^='figure-group'] > .callout-content > * {
+  max-width: 100%;
+}
+
+.callout[data-callout^='figure'] {
+  padding: 0.5em;
+  margin: var(--margin-y) auto;
+  background-color: var(--callout-background-color) !important;
+  border: 1px solid var(--callout-border-color);
+  width: var(--callout-width);
+}
+
+.callout[data-callout^='figure'] .callout-icon {
+  display: none;
+}
+
+.callout[data-callout^='figure'] .callout-title-inner {
+  width: 100%;
+}
+
+.callout[data-callout^='figure'] .callout-title {
+  padding: 0;
+  margin: 0;
+  border-left: none !important;
+  background-color: transparent !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.callout[data-callout^='figure'] .callout-title img {
+  width: 100%;
+}
+
+.callout[data-callout^='figure'] .callout-content {
+  --callout-content-background: rgba(0, 0, 0, 0);
+  background-color: var(--callout-background-color) !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+div .callout[data-callout^='figure-right'] {
+  float: right;
+  width: 50%;
+  margin: var(--margin-y) var(--margin-x);
+}
+
+div .callout[data-callout^='figure-left'] {
+  float: left;
+  width: 50%;
+  margin: var(--margin-y) var(--margin-x);
+}
+
+div .callout[data-callout^='figure-note'] {
+  width: 50%;
+}
+
+.callout[data-callout^='figure-note'] .callout-title {
+  display: none;
+}
+
+div .callout[data-callout^='figure-note-right'] {
+  float: right;
+  margin: var(--margin-y) var(--margin-x);
+}
+
+div .callout[data-callout^='figure-note-left'] {
+  float: left;
+  margin: var(--margin-y) var(--margin-x);
+}
+
+div .callout[data-callout^='figure-img'] {
+  width: 50%;
+  background-color: transparent !important;
+  border: none;
+}
+
+.callout[data-callout^='figure-img'] .callout-content {
+  display: none;
+}
+
+div .callout[data-callout^='figure-img-right'] {
+  float: right;
+  margin: var(--margin-y) var(--margin-x) !important;
+}
+
+.callout[data-callout^='figure-img-left'] {
+  float: left;
+  margin: var(--margin-y) var(--margin-x) !important;
+}
+
+/* @settings
+name: Callouts Extra
+id: callouts-extra
+settings:
+  -
+    id: callout-group-3-columns
+    title: Callout Group 3 Columns
+    description: Callout groups will display with max 3 columns
+    type: class-toggle
+    default: false
+  -
+    id: callout-background-color
+    title: Callout Background Color
+    description: Background color for the callouts
+    type: variable-color
+    format: hex
+    default: var(--background-secondary)
+  -
+    id: callout-border-color
+    title: Callout Border Color
+    description: Border color for the callouts
+    type: variable-color
+    format: hex
+    default: var(--hr-color)
+  -
+    id: margin-x
+    title: Horizontal Margin
+    description: Horizontal margin for the callouts
+    type: variable-number
+    default: 1
+    format: em
+  -
+    id: margin-y
+    title: Vertical Margin
+    description: Vertical margin for the callouts
+    type: variable-number
+    default: 0.25
+    format: em
+  -
+    id: callout-width
+    title: Callout Width
+    description: Width for the callouts
+    type: variable-number
+    default: 20
+    format: em
+  -
+    id: credits
+    title: Author
+    description: '@MatiasTK'
+    type: heading
+
+*/
