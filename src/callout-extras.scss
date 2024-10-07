@@ -44,6 +44,7 @@ body{
         box-shadow: none;
         max-width: 100%;
         background-color: var(--callout-background-color);
+        overflow-y: visible;
     }
 }
 
@@ -147,8 +148,8 @@ settings:
     title: Callout Width
     description: Width for the callouts
     type: variable-number
-    default: 20
-    format: em
+    default: 50
+    format: '%'
   -
     id: credits
     title: Author
