@@ -38,7 +38,7 @@ body {
   box-shadow: none;
   max-width: 100%;
   background-color: var(--callout-background-color);
-  overflow-y: visible;
+  overflow: visible;
 }
 
 .el-div[data-callout^=figure] .callout[data-callout$=-right] {
